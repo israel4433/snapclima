@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>SNAP.PROGETO</title>
+</head>
+
+<body>
+
+ <HEader class="header">
+
+    <DIV class="header__city-search-bar">
+
+       <input
+       class="header__input"
+       id="city-search-input"
+       type="TEXT"
+       placeholder="Qual a proxima cidade?">
+
+       <BUtton
+       class="header__button"
+       id="city-search-button">
+
+       <img class="header__button-icon" src="./assets/search-icon.svg" alt="Lupa.">
+
+       </BUtton>
+    </DIV>
+
+    <DIv
+    class="header__current-date"
+    id="current-date">
+      ...
+    </DIv>
+
+    <DIv
+    class="header__city-name"
+    id="city-name">
+      ...
+    </DIv>
+
+ </HEader>
+ 
+ <SECtion class="currrent-temperature">
+        <IMg
+            class="current-temperature__weather-icon"
+            id="weather-icon"
+            src="./assets/loading-icon.svg"
+            aria-hidden="true"
+            alt="icone que ilustra a temperatura atual.">
+
+        <DIV
+            class="current-temperature__description"
+            id="weather-description">
+            ...
+        </DIV>
+
+        <DIV class="current-temperature__info-label">Tempo agora</DIV>
+
+        <DIV
+            class="current-temperature__current-temperature"
+            id="current-temperature">
+            ...
+        </DIV>
+
+ </SECtion>
+
+  <DIV class="bottom-container">
+   <SEction class="temperature-details">
+
+     <DIV class="temperature-details__item">
+      <DIV class="temperature-details__label">Vento</DIV>
+
+    <DIV
+      class="temperature-details__value"
+      id="wind-speed">
+      ...
+    </DIV>
+
+     </DIV>
+
+     <DIV class="temperature-details__item">
+      <DIv class="temperature-details__label">Sensaçao</DIv>
+
+    <DIV
+      class="temperature-details__value"
+      id="feels-like-temperature">
+      ...
+    </DIV>
+
+     </DIV>
+
+     <DIV class="temperature-details__item">
+      <DIV class="temperature-details__label">Umidade</DIV>
+
+      <DIV
+      class="temperature-details__value"
+      id="current-humidity">
+      ...
+    </DIV>
+
+     </DIV>
+
+   </Section>
+
+   <Section class="sunset-sunrise">
+ 
+   <DIV class="sunset-sunrise__item">
+    <IMG class="sunset-sunrise__icon" src="./assets/sunrise.svg" alt="Nascer do sol">
+
+<DIV
+    class="sunset-sunrise__value"
+    id="sunrise-time">
+    ...
+</DIV>
+
+   </DIV>
+
+   <DIV class="sunset-sunrise__item">
+    <IMG class="sunset-sunrise__icon" src="./assets/sunset.svg" alt="Por do sol">
+
+<DIV
+    class="sunset-sunrise__value"
+    id="sunset-time">
+    ...
+</DIV>
+
+   </DIV>
+
+   </SEction>
+  </DIV>
+
+  <script src="app.js"></script>
+</BOdy>
+
+</html>
